@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Table</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th colspan="3">수</th>
+                <!-- <th>목</th>
+                <th>금</th> -->
+                <!-- th 태그는 table 내에서 행(좌에서 우)제목을 담당함 -->
+            </tr>
+            <!-- tr 태그는 table 내에서 가로줄을 만드는 역할 -->
+        </thead>
+        <!-- table head -->
+         <tbody>
+            <tr>
+                <td>1교시</td>
+                <td>영어</td>
+                <td rowspan="2">도덕</td>
+                <!-- rowspan은 해당 셀의 열(위에서 아래)을 원하는 만큼 병합한다 ex) 엑셀 셀병합, 다만 rowspan 걸어준 셀이 영향을 미치는 줄은 오른쪽으로 한칸씩 밀리게 되어 표를 삐져나올 수도 있다!  -->
+                <td>사회</td>
+                <td>수학</td>
+                <td>기술</td>
+                <!-- td 태그는 table 내에서 각 셀에 내용을 넣는 역할 -->
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td>도덕</td>
+                <td>영어</td>
+                <td>기술</td>
+                <td>수학</td>
+                <!-- <td>사회</td> -->
+            </tr>
+         </tbody>
+         <!-- table body -->
+    </table>
+    <!-- table 태그는 표 삽입 -->
+</body>
+</html>

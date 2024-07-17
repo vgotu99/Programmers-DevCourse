@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        ul {
+            overflow: hidden;
+            /* overflow 속성은 안에 들어간 내용(텍스트)이 넘칠 때 hidden으로 잘라내 숨기거나 / scroll로 경우와 상관 없이 스크롤을 만들어주거나 / auto로 넘치는 경우에만 스크롤을 만들어주는 방법으로 사용할 수 있다.*/
+        }
+        li {
+            list-style: none;
+            /* ul or ol 안에 있는 각 li 앞에 있는 점 or 숫자 들을 없애준다 */
+            float: left;
+            padding: 15px;
+        }
+        li:first-child {
+           border-radius: 10px 0 0 10px;
+        }
+        li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+        li:nth-child(2n) {
+            background-color: #FF0003;
+        }
+        li:nth-child(2n+1) {
+            background-color: #E4F1FF;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>첫 번째</li>
+        <li>두 번째</li>
+        <li>세 번째</li>
+        <li>네 번째</li>
+        <li>다섯 번째</li>
+        <li>여섯 번째</li>
+        <li>일곱 번째</li>
+    </ul>
+</body>
+</html>
+    
